@@ -5,6 +5,7 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'rubygems'
+require 'pry'
 
 APP_ROOT = File.expand_path('../..', __FILE__)
 $: << File.join(APP_ROOT, 'lib/')

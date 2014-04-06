@@ -2,11 +2,11 @@ require 'spec_helper'
 
 describe NOAA do
   describe NOAA::StationWriter do
-    let(:xml_document) { LibXML::XML::Document.file(File.join(File.dirname(__FILE__), 'data', 'stations-abridged.xml')) }
+    let(:xml_doc) { Nokogiri::XML(File.open(File.join(File.dirname(__FILE__), 'data', 'stations-abridged.xml')).read) }
 
     before do
       io = StringIO.new
-      NOAA::StationWriter.new(xml_document).write(io)
+      NOAA::StationWriter.new(xml_doc).write(io)
       @yaml = YAML.load(io.string)
     end
 
