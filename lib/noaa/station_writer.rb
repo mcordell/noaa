@@ -5,7 +5,7 @@ module NOAA
     end
 
     def write(io)
-      YAML.dump(@doc.find('/wx_station_index/station').map { |node| node_to_hash(node) }, io)
+      YAML.dump(@doc.xpath('/wx_station_index/station').map { |node| node_to_hash(node) }, io)
     end
 
     private
@@ -20,7 +20,7 @@ module NOAA
     end
 
     def node_value(node, element)
-      node.find("./#{element}/text()").first.to_s
+      node.xpath("./#{element}/text()").first.to_s
     end
   end
 end

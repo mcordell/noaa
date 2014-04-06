@@ -31,7 +31,6 @@ This can be run at any time to update the stations, but you must run it once to 
   s.add_runtime_dependency('nokogiri', '>= 0.9.7')
   s.add_runtime_dependency('typhoeus', '>= 0.6.8')
   s.add_runtime_dependency('geokit', '>= 1.5.0')
-  s.add_runtime_dependency('libxml-ruby')
   s.add_development_dependency('rspec')
   s.add_development_dependency('pry')
 end

@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe NOAA do
   describe NOAA::Forecast do
-    let(:xml_doc) { LibXML::XML::Document.file(File.join(File.dirname(__FILE__), 'data', '4-day.xml')) }
+    let(:xml_doc) { Nokogiri::XML(File.open(File.join(File.dirname(__FILE__), 'data', '4-day.xml')).read) }
     let(:forecast) { NOAA::Forecast.from_xml(xml_doc) }
 
     describe "#length" do

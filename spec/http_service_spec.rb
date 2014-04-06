@@ -12,7 +12,7 @@ describe NOAA do
 
       it 'returns a nokogiri XML document' do
         expect(http_service.get_current_conditions(@station)).
-        to be_a LibXML::XML::Document
+        to be_a Nokogiri::XML::Document
       end
     end
 
@@ -28,7 +28,7 @@ describe NOAA do
 
       it 'returns a XML document for forecast' do
         expect(http_service.get_forecast( @num_days, @lat, @long)).
-        to be_a LibXML::XML::Document
+        to be_a Nokogiri::XML::Document
       end
     end
 
@@ -37,7 +37,7 @@ describe NOAA do
 
       it 'returns a XML document for station list' do
         expect(http_service.get_station_list).
-        to be_a LibXML::XML::Document
+        to be_a Nokogiri::XML::Document
       end
     end
   end

@@ -2,7 +2,6 @@ begin
   require 'time'
   require 'nokogiri'
   require 'geokit'
-  require 'libxml'
   require 'open-uri'
   require 'typhoeus'
 rescue LoadError => e

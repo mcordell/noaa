@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe NOAA do
   describe NOAA::CurrentConditions do
-    let(:xml_doc) { LibXML::XML::Document.file(File.join(File.dirname(__FILE__), 'data', 'KVAY.xml')) }
+    let(:xml_doc) { Nokogiri::XML(File.open(File.join(File.dirname(__FILE__), 'data', 'KVAY.xml')).read) }
     let(:current_conditions) { NOAA::CurrentConditions.from_xml(xml_doc) }
 
     describe "#observed_at" do
