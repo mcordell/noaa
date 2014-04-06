@@ -4,6 +4,7 @@ begin
   require 'geokit'
   require 'libxml'
   require 'open-uri'
+  require 'typhoeus'
 rescue LoadError => e
   if require 'rubygems' then retry
   else raise(e)
