@@ -1,12 +1,21 @@
 #noaa
 
-- [http://github.com/outoftime/noaa](ttp://github.com/outoftime/noaa)
-
 ##Description:
 
 noaa is a library that provides an API for the National Oceanic and Atmospheric Association's weather
 data feeds. It currently provides access to two types of data: current conditions (through NOAA::CurrentConditions) and
 daily forecasts (through NOAA::Forecast).
+
+**About this branch (mcordell/noaa:dev)**
+This branch is my personal update of the NOAA gem. It has features and pull requests that I currently I have open for the original gem (outoftime/noaa) that is not frequently updated. If my pull requests are accepted this branch will no longer be necessary. Feel free to use this branch as I currently use it production.
+
+In your gemfile :
+
+```ruby
+	gem 'noaa', git: 'git@github.com:mcordell/noaa.git', branch: 'dev'
+```
+
+
 
 ##Features:
 
