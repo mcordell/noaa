@@ -4,10 +4,11 @@ module NOAA
     DEFAULTS = {
       station_list_url: 'http://www.weather.gov/xml/current_obs/index.xml',
       current_obs_base_url: 'http://w1.weather.gov/xml/current_obs/',
-      by_day_url: 'http://www.weather.gov/forecasts/xml/sample_products/browser_interface/ndfdBrowserClientByDay.php?' }
+      detailed_url: 'http://graphical.weather.gov/xml/sample_products/browser_interface/ndfdXMLclient.php',
+      by_day_url: 'http://graphical.weather.gov/xml/sample_products/browser_interface/ndfdBrowserByDay.php' }
 
     attr_accessor :station, :station_list_url, :current_obs_base_url,
-                  :by_day_url
+                  :by_day_url, :detailed_url
 
     def initialize
       load_with_hash(DEFAULTS)

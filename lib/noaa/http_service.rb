@@ -6,7 +6,7 @@ module NOAA
     end
 
     def get_forecast(num_days, lat, lng)
-      params = { num_days: num_days, lat: lat, long: lng }
+      params = { num_days: num_days, lat: lat, lon: lng }
       Nokogiri::XML(get_html_document(NOAA.configuration.by_day_url, params))
     end
 
