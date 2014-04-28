@@ -6,10 +6,16 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'rubygems'
 require 'pry'
+require 'vcr'
 
 APP_ROOT = File.expand_path('../..', __FILE__)
 $: << File.join(APP_ROOT, 'lib/')
 require 'noaa'
+
+VCR.configure do |c|
+  c.cassette_library_dir = File.join(APP_ROOT, 'spec/vcr')
+  c.hook_into :webmock
+end
 
 Dir[File.join(APP_ROOT, 'spec/support/**/*.rb')].each { |f| require f }
 

@@ -33,4 +33,5 @@ This can be run at any time to update the stations, but you must run it once to 
   s.add_runtime_dependency('geokit', '>= 1.5.0')
   s.add_development_dependency('rspec')
   s.add_development_dependency('pry')
+  s.add_development_dependency('vcr')
 end

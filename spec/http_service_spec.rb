@@ -11,8 +11,10 @@ describe NOAA do
       end
 
       it 'returns a nokogiri XML document' do
-        expect(http_service.get_current_conditions(@station)).
-        to be_a Nokogiri::XML::Document
+        VCR.use_cassette('current_conditions') do
+          expect(http_service.get_current_conditions(@station)).
+          to be_a Nokogiri::XML::Document
+        end
       end
     end
 
@@ -27,8 +29,10 @@ describe NOAA do
       end
 
       it 'returns a XML document for forecast' do
-        expect(http_service.get_forecast( @num_days, @lat, @long)).
-        to be_a Nokogiri::XML::Document
+        VCR.use_cassette('forecast') do
+          expect(http_service.get_forecast( @num_days, @lat, @long)).
+          to be_a Nokogiri::XML::Document
+        end
       end
     end
 
@@ -36,8 +40,10 @@ describe NOAA do
       let(:station_list_url) { "http://www.weather.gov/xml/current_obs/index.xml" }
 
       it 'returns a XML document for station list' do
-        expect(http_service.get_station_list).
-        to be_a Nokogiri::XML::Document
+        VCR.use_cassette('station_list') do
+          expect(http_service.get_station_list).
+          to be_a Nokogiri::XML::Document
+        end
       end
     end
   end

@@ -1,0 +1,180 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://graphical.weather.gov/xml/sample_products/browser_interface/ndfdBrowserClientByDay.php?format=24%20hourly&lat=38.7076896900004&lon=-122.90249849699973&num_days=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (Red Hat)
+      X-Nids-Serverid:
+      - www5.mo
+      Content-Length:
+      - '7443'
+      Content-Type:
+      - text/xml
+      Cache-Control:
+      - max-age=169
+      Expires:
+      - Mon, 28 Apr 2014 01:47:34 GMT
+      Date:
+      - Mon, 28 Apr 2014 01:44:45 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0"?>
+        <dwml version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.nws.noaa.gov/forecasts/xml/DWMLgen/schema/DWML.xsd">
+          <head>
+            <product srsName="WGS 1984" concise-name="dwmlByDay" operational-mode="official">
+              <title>NOAA's National Weather Service Forecast by 24 Hour Period</title>
+              <field>meteorological</field>
+              <category>forecast</category>
+              <creation-date refresh-frequency="PT1H">2014-04-28T01:44:45Z</creation-date>
+            </product>
+            <source>
+              <more-information>http://www.nws.noaa.gov/forecasts/xml/</more-information>
+              <production-center>Meteorological Development Laboratory<sub-center>Product Generation Branch</sub-center></production-center>
+              <disclaimer>http://www.nws.noaa.gov/disclaimer.html</disclaimer>
+              <credit>http://www.weather.gov/</credit>
+              <credit-logo>http://www.weather.gov/images/xml_logo.gif</credit-logo>
+              <feedback>http://www.weather.gov/feedback.php</feedback>
+            </source>
+          </head>
+          <data>
+            <location>
+              <location-key>point1</location-key>
+              <point latitude="38.71" longitude="-122.90"/>
+            </location>
+            <moreWeatherInformation applicable-location="point1">http://forecast.weather.gov/MapClick.php?textField1=38.71&amp;textField2=-122.90</moreWeatherInformation>
+            <time-layout time-coordinate="local" summarization="24hourly">
+              <layout-key>k-p24h-n7-1</layout-key>
+              <start-valid-time>2014-04-28T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-04-29T06:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-04-29T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-04-30T06:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-04-30T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-01T06:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-05-01T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-02T06:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-05-02T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-03T06:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-05-03T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-04T06:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-05-04T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-05T06:00:00-07:00</end-valid-time>
+            </time-layout>
+            <time-layout time-coordinate="local" summarization="12hourly">
+              <layout-key>k-p12h-n14-2</layout-key>
+              <start-valid-time>2014-04-28T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-04-28T18:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-04-28T18:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-04-29T06:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-04-29T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-04-29T18:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-04-29T18:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-04-30T06:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-04-30T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-04-30T18:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-04-30T18:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-01T06:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-05-01T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-01T18:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-05-01T18:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-02T06:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-05-02T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-02T18:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-05-02T18:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-03T06:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-05-03T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-03T18:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-05-03T18:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-04T06:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-05-04T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-04T18:00:00-07:00</end-valid-time>
+              <start-valid-time>2014-05-04T18:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-05T06:00:00-07:00</end-valid-time>
+            </time-layout>
+            <time-layout time-coordinate="local" summarization="24hourly">
+              <layout-key>k-p7d-n1-3</layout-key>
+              <start-valid-time>2014-04-28T06:00:00-07:00</start-valid-time>
+              <end-valid-time>2014-05-05T06:00:00-07:00</end-valid-time>
+            </time-layout>
+            <parameters applicable-location="point1">
+              <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+                <name>Daily Maximum Temperature</name>
+                <value>70</value>
+                <value>86</value>
+                <value>88</value>
+                <value>86</value>
+                <value>79</value>
+                <value>70</value>
+                <value>71</value>
+              </temperature>
+              <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+                <name>Daily Minimum Temperature</name>
+                <value>50</value>
+                <value>57</value>
+                <value>58</value>
+                <value>54</value>
+                <value>48</value>
+                <value>49</value>
+                <value xsi:nil="true"/>
+              </temperature>
+              <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-2">
+                <name>12 Hourly Probability of Precipitation</name>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>2</value>
+                <value>3</value>
+                <value>2</value>
+                <value>4</value>
+                <value>4</value>
+                <value xsi:nil="true"/>
+              </probability-of-precipitation>
+              <weather time-layout="k-p24h-n7-1">
+                <name>Weather Type, Coverage, and Intensity</name>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+                <weather-conditions weather-summary="Sunny"/>
+                <weather-conditions weather-summary="Sunny"/>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+                <weather-conditions weather-summary="Mostly Sunny"/>
+              </weather>
+              <conditions-icon type="forecast-NWS" time-layout="k-p24h-n7-1">
+                <name>Conditions Icons</name>
+                <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+                <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg</icon-link>
+                <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg</icon-link>
+                <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+                <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+                <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+                <icon-link>http://www.nws.noaa.gov/weather/images/fcicons/few.jpg</icon-link>
+              </conditions-icon>
+              <hazards time-layout="k-p7d-n1-3">
+                <name>Watches, Warnings, and Advisories</name>
+                <hazard-conditions xsi:nil="true"/>
+              </hazards>
+            </parameters>
+          </data>
+        </dwml>
+    http_version: 
+  recorded_at: Mon, 28 Apr 2014 01:44:44 GMT
+recorded_with: VCR 2.9.0

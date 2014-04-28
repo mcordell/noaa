@@ -36,6 +36,7 @@ GEM
     slop (3.5.0)
     typhoeus (0.6.8)
       ethon (>= 0.7.0)
+    vcr (2.9.0)
 
 PLATFORMS
   ruby
@@ -44,3 +45,4 @@ DEPENDENCIES
   noaa!
   pry
   rspec
+  vcr
