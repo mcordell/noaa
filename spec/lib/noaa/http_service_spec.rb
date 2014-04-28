@@ -25,7 +25,7 @@ describe NOAA do
         @lat = 38.7076896900004
         @long = -122.90249849699973
         @num_days = 4
-        @params = { lat: @lat, num_days: @num_days, long: @long }
+        @params = { lat: @lat, num_days: @num_days, lon: @long }
       end
 
       it 'returns a XML document for forecast' do
@@ -35,6 +35,23 @@ describe NOAA do
         end
       end
     end
+
+    describe "#get_detailed_forecast" do
+      let(:detailed_url) { 'http://graphical.weather.gov/xml/sample_products/browser_interface/ndfdXMLclient.php' }
+
+      before do
+        @lat = 38.7076896900004
+        @long = -122.90249849699973
+        @num_days = 4
+        @params = { lat: @lat, num_days: @num_days, lon: @long }
+      end
+
+      it 'returns a XML document for forecast' do
+        expect(http_service.get_detailed_forecast( @num_days, @lat, @long)).
+        to be_a Nokogiri::XML::Document
+      end
+    end
+
 
     describe "#get_station_list" do
       let(:station_list_url) { "http://www.weather.gov/xml/current_obs/index.xml" }

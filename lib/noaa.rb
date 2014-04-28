@@ -61,6 +61,10 @@ module NOAA
       Forecast.from_xml(HttpService.new.get_forecast(num_days, lat, lng))
     end
 
+    def detailed_forecast(num_days, lat, lng)
+      Forecast.from_xml(HttpService.new.get_detailed_forecast(num_days, lat, lng))
+    end
+
     def configure
       yield configuration if block_given?
     end
