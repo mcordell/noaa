@@ -1,0 +1,1713 @@
+<?xml version="1.0"?>
+<dwml version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.nws.noaa.gov/forecasts/xml/DWMLgen/schema/DWML.xsd">
+  <head>
+    <product srsName="WGS 1984" concise-name="time-series" operational-mode="official">
+      <title>NOAA's National Weather Service Real Time Mesoscale Analysis And Forecast Data</title>
+      <field>meteorological</field>
+      <category>analysis and forecast</category>
+      <creation-date refresh-frequency="PT1H">2014-05-01T06:30:45Z</creation-date>
+    </product>
+    <source>
+      <more-information>http://products.weather.gov/search.php</more-information>
+      <production-center>Meteorological Development Laboratory<sub-center>Product Generation Branch</sub-center></production-center>
+      <disclaimer>http://www.nws.noaa.gov/disclaimer.html</disclaimer>
+      <credit>http://www.weather.gov/</credit>
+      <credit-logo>http://www.weather.gov/images/xml_logo.gif</credit-logo>
+      <feedback>http://www.weather.gov/feedback.php</feedback>
+    </source>
+  </head>
+  <data>
+    <location>
+      <location-key>point1</location-key>
+      <point latitude="38.71" longitude="-122.90"/>
+    </location>
+    <moreWeatherInformation applicable-location="point1">http://forecast.weather.gov/MapClick.php?textField1=38.71&amp;textField2=-122.90</moreWeatherInformation>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n7-1</layout-key>
+      <start-valid-time>2014-05-01T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-03T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-04T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-04T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-05T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-05T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-06T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-06T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-07T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-07T20:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n7-2</layout-key>
+      <start-valid-time>2014-04-30T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T09:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T09:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T09:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-03T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-04T09:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-04T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-05T09:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-05T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-06T09:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-06T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-07T09:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p12h-n14-3</layout-key>
+      <start-valid-time>2014-04-30T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-03T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-03T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-04T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-04T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-04T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-04T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-05T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-05T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-05T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-05T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-06T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-06T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-06T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-06T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-07T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-07T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-07T17:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p6h-n7-4</layout-key>
+      <start-valid-time>2014-04-30T23:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T11:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T11:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T23:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T23:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T11:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T11:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T17:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p3h-n38-5</layout-key>
+      <start-valid-time>2014-05-01T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T20:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T20:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-06T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-06T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-06T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-06T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-07T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-07T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-07T17:00:00-07:00</start-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p3h-n30-6</layout-key>
+      <start-valid-time>2014-05-01T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T20:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T20:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T17:00:00-07:00</start-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p3h-n22-7</layout-key>
+      <start-valid-time>2014-05-01T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T20:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T20:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T17:00:00-07:00</start-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p1h-n74-8</layout-key>
+      <start-valid-time>2014-05-01T00:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T01:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T03:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T04:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T06:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T07:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T09:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T10:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T12:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T13:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T15:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T16:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T18:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T19:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T20:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T21:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T22:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T00:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T01:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T03:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T04:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T06:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T07:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T09:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T10:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T12:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T13:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T15:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T16:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T18:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T19:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T20:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T21:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T22:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T00:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T01:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T03:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T04:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T06:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T07:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T09:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T10:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T12:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T13:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T15:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T16:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T17:00:00-07:00</start-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p6h-n20-9</layout-key>
+      <start-valid-time>2014-04-30T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T23:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T23:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T11:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T11:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T23:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T23:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T11:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T11:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T23:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T23:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-03T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T11:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-03T11:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-03T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T23:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-03T23:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-04T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-04T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-04T11:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-04T11:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-04T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-04T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-04T23:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-04T23:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-05T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-05T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-05T11:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-05T11:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-05T17:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n8-10</layout-key>
+      <start-valid-time>2014-04-30T14:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-03T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-04T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-04T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-05T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-05T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-06T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-06T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-07T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-07T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-08T05:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n1-11</layout-key>
+      <start-valid-time>2014-05-03T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-04T05:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n1-12</layout-key>
+      <start-valid-time>2014-04-30T18:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T05:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n2-13</layout-key>
+      <start-valid-time>2014-05-01T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T05:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p6d-n1-14</layout-key>
+      <start-valid-time>2014-05-07T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-13T17:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p1m-n1-15</layout-key>
+      <start-valid-time>2014-04-30T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-31T17:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p3m-n13-16</layout-key>
+      <start-valid-time>2014-04-30T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-07-31T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-31T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-08-31T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-06-30T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-09-30T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-07-31T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-10-31T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-08-31T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-11-30T16:00:00-08:00</end-valid-time>
+      <start-valid-time>2014-09-30T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-12-31T16:00:00-08:00</end-valid-time>
+      <start-valid-time>2014-10-31T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2015-01-31T16:00:00-08:00</end-valid-time>
+      <start-valid-time>2014-11-30T16:00:00-08:00</start-valid-time>
+      <end-valid-time>2015-02-28T16:00:00-08:00</end-valid-time>
+      <start-valid-time>2014-12-31T16:00:00-08:00</start-valid-time>
+      <end-valid-time>2015-03-31T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2015-01-31T16:00:00-08:00</start-valid-time>
+      <end-valid-time>2015-04-30T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2015-02-28T16:00:00-08:00</start-valid-time>
+      <end-valid-time>2015-05-31T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2015-03-31T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2015-06-30T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2015-04-30T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2015-07-31T17:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n7-17</layout-key>
+      <start-valid-time>2014-05-01T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-03T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-04T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-04T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-05T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-05T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-06T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-06T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-07T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-07T20:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p1h-n62-18</layout-key>
+      <start-valid-time>2014-04-29T23:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T00:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T01:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T02:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T03:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T04:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T05:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T06:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T07:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T08:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T09:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T10:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T11:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T12:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T13:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T14:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T15:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T16:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T17:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T18:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T19:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T20:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T21:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T22:02:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T20:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T20:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-06T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-06T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-06T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-06T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-07T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-07T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-07T17:00:00-07:00</start-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p1h-n35-19</layout-key>
+      <start-valid-time>2014-04-29T22:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-29T23:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-29T23:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T00:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T00:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T01:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T01:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T02:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T02:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T03:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T03:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T04:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T04:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T06:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T06:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T07:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T07:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T08:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T08:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T09:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T09:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T10:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T10:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T11:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T11:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T12:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T12:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T13:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T13:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T14:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T14:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T15:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T15:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T16:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T16:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T18:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T18:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T19:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T19:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T20:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T20:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T21:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T21:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-04-30T22:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-04-30T23:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T11:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T11:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-01T23:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-01T23:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T11:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T11:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T17:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T17:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-02T23:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-02T23:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T05:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-03T05:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T11:00:00-07:00</end-valid-time>
+      <start-valid-time>2014-05-03T11:00:00-07:00</start-valid-time>
+      <end-valid-time>2014-05-03T17:00:00-07:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p1h-n62-20</layout-key>
+      <start-valid-time>2014-04-29T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T00:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T01:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T03:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T04:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T06:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T07:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T09:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T10:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T12:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T13:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T15:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T16:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T18:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T19:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T20:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T21:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-04-30T22:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T20:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-01T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T20:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-02T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T02:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T08:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T14:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-03T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-04T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-05T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-06T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-06T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-06T17:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-06T23:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-07T05:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-07T11:00:00-07:00</start-valid-time>
+      <start-valid-time>2014-05-07T17:00:00-07:00</start-valid-time>
+    </time-layout>
+    <parameters applicable-location="point1">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Maximum Temperature</name>
+        <value>86</value>
+        <value>84</value>
+        <value>70</value>
+        <value>62</value>
+        <value>64</value>
+        <value>67</value>
+        <value>68</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-2">
+        <name>Daily Minimum Temperature</name>
+        <value>59</value>
+        <value>55</value>
+        <value>49</value>
+        <value>47</value>
+        <value>48</value>
+        <value>46</value>
+        <value>47</value>
+      </temperature>
+      <temperature type="hourly" units="Fahrenheit" time-layout="k-p1h-n62-20">
+        <name>Temperature</name>
+        <value type="RTMA">66</value>
+        <value type="RTMA">65</value>
+        <value type="RTMA">65</value>
+        <value type="RTMA">63</value>
+        <value type="RTMA">61</value>
+        <value type="RTMA">60</value>
+        <value type="RTMA">60</value>
+        <value type="RTMA">60</value>
+        <value type="RTMA">59</value>
+        <value type="RTMA">61</value>
+        <value type="RTMA">70</value>
+        <value type="RTMA">78</value>
+        <value type="RTMA">84</value>
+        <value type="RTMA">88</value>
+        <value type="RTMA">89</value>
+        <value type="RTMA">91</value>
+        <value type="RTMA">92</value>
+        <value type="RTMA">91</value>
+        <value type="RTMA">89</value>
+        <value type="RTMA">86</value>
+        <value type="RTMA">83</value>
+        <value type="RTMA">77</value>
+        <value type="RTMA">72</value>
+        <value type="RTMA">69</value>
+        <value type="NDFD">61</value>
+        <value type="NDFD">59</value>
+        <value type="NDFD">63</value>
+        <value type="NDFD">77</value>
+        <value type="NDFD">84</value>
+        <value type="NDFD">83</value>
+        <value type="NDFD">68</value>
+        <value type="NDFD">61</value>
+        <value type="NDFD">57</value>
+        <value type="NDFD">55</value>
+        <value type="NDFD">59</value>
+        <value type="NDFD">74</value>
+        <value type="NDFD">83</value>
+        <value type="NDFD">81</value>
+        <value type="NDFD">64</value>
+        <value type="NDFD">56</value>
+        <value type="NDFD">51</value>
+        <value type="NDFD">49</value>
+        <value type="NDFD">52</value>
+        <value type="NDFD">63</value>
+        <value type="NDFD">68</value>
+        <value type="NDFD">67</value>
+        <value type="NDFD">52</value>
+        <value type="NDFD">47</value>
+        <value type="NDFD">57</value>
+        <value type="NDFD">61</value>
+        <value type="NDFD">51</value>
+        <value type="NDFD">48</value>
+        <value type="NDFD">58</value>
+        <value type="NDFD">62</value>
+        <value type="NDFD">50</value>
+        <value type="NDFD">46</value>
+        <value type="NDFD">60</value>
+        <value type="NDFD">65</value>
+        <value type="NDFD">51</value>
+        <value type="NDFD">47</value>
+        <value type="NDFD">61</value>
+        <value type="NDFD">66</value>
+      </temperature>
+      <temperature type="dew point" units="Fahrenheit" time-layout="k-p1h-n62-20">
+        <name>Dew Point Temperature</name>
+        <value type="RTMA">45</value>
+        <value type="RTMA">44</value>
+        <value type="RTMA">42</value>
+        <value type="RTMA">42</value>
+        <value type="RTMA">38</value>
+        <value type="RTMA">39</value>
+        <value type="RTMA">37</value>
+        <value type="RTMA">38</value>
+        <value type="RTMA">37</value>
+        <value type="RTMA">37</value>
+        <value type="RTMA">41</value>
+        <value type="RTMA">43</value>
+        <value type="RTMA">39</value>
+        <value type="RTMA">38</value>
+        <value type="RTMA">39</value>
+        <value type="RTMA">40</value>
+        <value type="RTMA">41</value>
+        <value type="RTMA">43</value>
+        <value type="RTMA">48</value>
+        <value type="RTMA">48</value>
+        <value type="RTMA">48</value>
+        <value type="RTMA">49</value>
+        <value type="RTMA">49</value>
+        <value type="RTMA">49</value>
+        <value type="NDFD">50</value>
+        <value type="NDFD">52</value>
+        <value type="NDFD">51</value>
+        <value type="NDFD">49</value>
+        <value type="NDFD">45</value>
+        <value type="NDFD">40</value>
+        <value type="NDFD">49</value>
+        <value type="NDFD">50</value>
+        <value type="NDFD">47</value>
+        <value type="NDFD">48</value>
+        <value type="NDFD">48</value>
+        <value type="NDFD">48</value>
+        <value type="NDFD">46</value>
+        <value type="NDFD">41</value>
+        <value type="NDFD">50</value>
+        <value type="NDFD">50</value>
+        <value type="NDFD">47</value>
+        <value type="NDFD">48</value>
+        <value type="NDFD">47</value>
+        <value type="NDFD">47</value>
+        <value type="NDFD">46</value>
+        <value type="NDFD">44</value>
+        <value type="NDFD">46</value>
+        <value type="NDFD">45</value>
+        <value type="NDFD">48</value>
+        <value type="NDFD">48</value>
+        <value type="NDFD">48</value>
+        <value type="NDFD">47</value>
+        <value type="NDFD">47</value>
+        <value type="NDFD">45</value>
+        <value type="NDFD">45</value>
+        <value type="NDFD">44</value>
+        <value type="NDFD">45</value>
+        <value type="NDFD">43</value>
+        <value type="NDFD">46</value>
+        <value type="NDFD">45</value>
+        <value type="NDFD">45</value>
+        <value type="NDFD">43</value>
+      </temperature>
+      <precipitation type="liquid" units="inches" time-layout="k-p1h-n35-19">
+        <name>Liquid Precipitation Amount</name>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="RTMA">0.00</value>
+        <value type="NDFD">0.00</value>
+        <value type="NDFD">0.00</value>
+        <value type="NDFD">0.00</value>
+        <value type="NDFD">0.00</value>
+        <value type="NDFD">0.00</value>
+        <value type="NDFD">0.00</value>
+        <value type="NDFD">0.00</value>
+        <value type="NDFD">0.00</value>
+        <value type="NDFD">0.00</value>
+        <value type="NDFD">0.00</value>
+        <value type="NDFD">0.00</value>
+      </precipitation>
+      <wind-speed type="sustained" units="knots" time-layout="k-p1h-n62-20">
+        <name>Wind Speed</name>
+        <value type="RTMA">4</value>
+        <value type="RTMA">5</value>
+        <value type="RTMA">6</value>
+        <value type="RTMA">6</value>
+        <value type="RTMA">5</value>
+        <value type="RTMA">5</value>
+        <value type="RTMA">5</value>
+        <value type="RTMA">6</value>
+        <value type="RTMA">6</value>
+        <value type="RTMA">5</value>
+        <value type="RTMA">5</value>
+        <value type="RTMA">4</value>
+        <value type="RTMA">5</value>
+        <value type="RTMA">7</value>
+        <value type="RTMA">6</value>
+        <value type="RTMA">7</value>
+        <value type="RTMA">6</value>
+        <value type="RTMA">7</value>
+        <value type="RTMA">5</value>
+        <value type="RTMA">3</value>
+        <value type="RTMA">3</value>
+        <value type="RTMA">0</value>
+        <value type="RTMA">2</value>
+        <value type="RTMA">1</value>
+        <value type="NDFD">1</value>
+        <value type="NDFD">1</value>
+        <value type="NDFD">1</value>
+        <value type="NDFD">4</value>
+        <value type="NDFD">4</value>
+        <value type="NDFD">4</value>
+        <value type="NDFD">5</value>
+        <value type="NDFD">5</value>
+        <value type="NDFD">6</value>
+        <value type="NDFD">5</value>
+        <value type="NDFD">5</value>
+        <value type="NDFD">2</value>
+        <value type="NDFD">2</value>
+        <value type="NDFD">8</value>
+        <value type="NDFD">8</value>
+        <value type="NDFD">6</value>
+        <value type="NDFD">6</value>
+        <value type="NDFD">5</value>
+        <value type="NDFD">5</value>
+        <value type="NDFD">7</value>
+        <value type="NDFD">7</value>
+        <value type="NDFD">12</value>
+        <value type="NDFD">10</value>
+        <value type="NDFD">7</value>
+        <value type="NDFD">9</value>
+        <value type="NDFD">9</value>
+        <value type="NDFD">6</value>
+        <value type="NDFD">3</value>
+        <value type="NDFD">7</value>
+        <value type="NDFD">9</value>
+        <value type="NDFD">7</value>
+        <value type="NDFD">4</value>
+        <value type="NDFD">3</value>
+        <value type="NDFD">14</value>
+        <value type="NDFD">7</value>
+        <value type="NDFD">4</value>
+        <value type="NDFD">6</value>
+        <value type="NDFD">12</value>
+      </wind-speed>
+      <direction type="wind" units="degrees true" time-layout="k-p1h-n62-20">
+        <name>Wind Direction</name>
+        <value type="RTMA">350</value>
+        <value type="RTMA">14</value>
+        <value type="RTMA">27</value>
+        <value type="RTMA">29</value>
+        <value type="RTMA">14</value>
+        <value type="RTMA">12</value>
+        <value type="RTMA">20</value>
+        <value type="RTMA">41</value>
+        <value type="RTMA">39</value>
+        <value type="RTMA">46</value>
+        <value type="RTMA">56</value>
+        <value type="RTMA">65</value>
+        <value type="RTMA">86</value>
+        <value type="RTMA">91</value>
+        <value type="RTMA">109</value>
+        <value type="RTMA">120</value>
+        <value type="RTMA">146</value>
+        <value type="RTMA">158</value>
+        <value type="RTMA">173</value>
+        <value type="RTMA">194</value>
+        <value type="RTMA">213</value>
+        <value type="RTMA">55</value>
+        <value type="RTMA">69</value>
+        <value type="RTMA">51</value>
+        <value type="NDFD">270</value>
+        <value type="NDFD">270</value>
+        <value type="NDFD">240</value>
+        <value type="NDFD">150</value>
+        <value type="NDFD">160</value>
+        <value type="NDFD">210</value>
+        <value type="NDFD">290</value>
+        <value type="NDFD">320</value>
+        <value type="NDFD">310</value>
+        <value type="NDFD">340</value>
+        <value type="NDFD">340</value>
+        <value type="NDFD">230</value>
+        <value type="NDFD">230</value>
+        <value type="NDFD">310</value>
+        <value type="NDFD">310</value>
+        <value type="NDFD">310</value>
+        <value type="NDFD">310</value>
+        <value type="NDFD">320</value>
+        <value type="NDFD">320</value>
+        <value type="NDFD">290</value>
+        <value type="NDFD">290</value>
+        <value type="NDFD">300</value>
+        <value type="NDFD">300</value>
+        <value type="NDFD">300</value>
+        <value type="NDFD">230</value>
+        <value type="NDFD">220</value>
+        <value type="NDFD">210</value>
+        <value type="NDFD">250</value>
+        <value type="NDFD">250</value>
+        <value type="NDFD">290</value>
+        <value type="NDFD">320</value>
+        <value type="NDFD">340</value>
+        <value type="NDFD">280</value>
+        <value type="NDFD">310</value>
+        <value type="NDFD">320</value>
+        <value type="NDFD">350</value>
+        <value type="NDFD">280</value>
+        <value type="NDFD">300</value>
+      </direction>
+      <cloud-amount type="total" units="percent" time-layout="k-p1h-n62-18">
+        <name>Cloud Cover Amount</name>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA">18</value>
+        <value type="RTMA">33</value>
+        <value type="RTMA">34</value>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="RTMA">31</value>
+        <value type="RTMA" xsi:nil="true"/>
+        <value type="NDFD">2</value>
+        <value type="NDFD">13</value>
+        <value type="NDFD">13</value>
+        <value type="NDFD">0</value>
+        <value type="NDFD">0</value>
+        <value type="NDFD">0</value>
+        <value type="NDFD">0</value>
+        <value type="NDFD">77</value>
+        <value type="NDFD">77</value>
+        <value type="NDFD">77</value>
+        <value type="NDFD">42</value>
+        <value type="NDFD">15</value>
+        <value type="NDFD">15</value>
+        <value type="NDFD">29</value>
+        <value type="NDFD">29</value>
+        <value type="NDFD">15</value>
+        <value type="NDFD">15</value>
+        <value type="NDFD">15</value>
+        <value type="NDFD">15</value>
+        <value type="NDFD">10</value>
+        <value type="NDFD">10</value>
+        <value type="NDFD">10</value>
+        <value type="NDFD">41</value>
+        <value type="NDFD">41</value>
+        <value type="NDFD">33</value>
+        <value type="NDFD">60</value>
+        <value type="NDFD">55</value>
+        <value type="NDFD">55</value>
+        <value type="NDFD">60</value>
+        <value type="NDFD">35</value>
+        <value type="NDFD">34</value>
+        <value type="NDFD">34</value>
+        <value type="NDFD">35</value>
+        <value type="NDFD">35</value>
+        <value type="NDFD">41</value>
+        <value type="NDFD">41</value>
+        <value type="NDFD">43</value>
+        <value type="NDFD">43</value>
+      </cloud-amount>
+      <temperature type="apparent" units="Fahrenheit" time-layout="k-p3h-n38-5">
+        <name>Apparent Temperature</name>
+        <value>61</value>
+        <value>59</value>
+        <value>63</value>
+        <value>77</value>
+        <value>82</value>
+        <value>81</value>
+        <value>68</value>
+        <value>61</value>
+        <value>57</value>
+        <value>55</value>
+        <value>59</value>
+        <value>74</value>
+        <value>81</value>
+        <value>79</value>
+        <value>64</value>
+        <value>56</value>
+        <value>51</value>
+        <value>49</value>
+        <value>52</value>
+        <value>63</value>
+        <value>68</value>
+        <value>67</value>
+        <value>52</value>
+        <value>47</value>
+        <value>57</value>
+        <value>61</value>
+        <value>51</value>
+        <value>48</value>
+        <value>58</value>
+        <value>62</value>
+        <value>50</value>
+        <value>46</value>
+        <value>60</value>
+        <value>65</value>
+        <value>51</value>
+        <value>47</value>
+        <value>61</value>
+        <value>66</value>
+      </temperature>
+      <precipitation type="snow" units="inches" time-layout="k-p6h-n7-4">
+        <name>Snow Amount</name>
+        <value>0.00</value>
+        <value>0.00</value>
+        <value>0.00</value>
+        <value>0.00</value>
+        <value>0.00</value>
+        <value>0.00</value>
+        <value>0.00</value>
+      </precipitation>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-3">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>0</value>
+        <value>0</value>
+        <value>0</value>
+        <value>0</value>
+        <value>0</value>
+        <value>0</value>
+        <value>0</value>
+        <value>18</value>
+        <value>16</value>
+        <value>20</value>
+        <value>12</value>
+        <value>7</value>
+        <value>5</value>
+        <value>1</value>
+      </probability-of-precipitation>
+      <fire-weather type="risk from wind and relative humidity" time-layout="k-p24h-n8-10">
+        <name>Fire Weather Outlook from Wind and Relative Humidity</name>
+        <value>No Areas</value>
+        <value>No Areas</value>
+        <value>No Areas</value>
+        <value>No Areas</value>
+        <value>No Areas</value>
+        <value>No Areas</value>
+        <value>No Areas</value>
+        <value>No Areas</value>
+      </fire-weather>
+      <fire-weather type="risk from dry thunderstorms" time-layout="k-p24h-n1-11">
+        <name>Fire Weather Outlook from Dry Thunderstorms</name>
+        <value>No Areas</value>
+      </fire-weather>
+      <convective-hazard>
+        <outlook time-layout="k-p24h-n8-10">
+          <name>Convective Hazard Outlook</name>
+          <value>No Thunderstorms</value>
+          <value>No Thunderstorms</value>
+          <value>No Thunderstorms</value>
+          <value>No Thunderstorms</value>
+          <value>No Thunderstorms</value>
+          <value>No Thunderstorms</value>
+          <value>No Thunderstorms</value>
+          <value>No Thunderstorms</value>
+        </outlook>
+      </convective-hazard>
+      <convective-hazard>
+        <severe-component type="tornadoes" units="percent" time-layout="k-p24h-n1-12">
+          <name>Probability of Tornadoes</name>
+          <value>0</value>
+        </severe-component>
+      </convective-hazard>
+      <convective-hazard>
+        <severe-component type="hail" units="percent" time-layout="k-p24h-n1-12">
+          <name>Probability of Hail</name>
+          <value>0</value>
+        </severe-component>
+      </convective-hazard>
+      <convective-hazard>
+        <severe-component type="damaging thunderstorm winds" units="percent" time-layout="k-p24h-n1-12">
+          <name>Probability of Damaging Thunderstorm Winds</name>
+          <value>0</value>
+        </severe-component>
+      </convective-hazard>
+      <convective-hazard>
+        <severe-component type="extreme tornadoes" units="percent" time-layout="k-p24h-n1-12">
+          <name>Probability of Extreme Tornadoes</name>
+          <value>0</value>
+        </severe-component>
+      </convective-hazard>
+      <convective-hazard>
+        <severe-component type="extreme hail" units="percent" time-layout="k-p24h-n1-12">
+          <name>Probability of Extreme Hail</name>
+          <value>0</value>
+        </severe-component>
+      </convective-hazard>
+      <convective-hazard>
+        <severe-component type="extreme thunderstorm winds" units="percent" time-layout="k-p24h-n1-12">
+          <name>Probability of Extreme Thunderstorm Winds</name>
+          <value>0</value>
+        </severe-component>
+      </convective-hazard>
+      <convective-hazard>
+        <severe-component type="severe thunderstorms" units="percent" time-layout="k-p24h-n2-13">
+          <name>Total Probability of Severe Thunderstorms</name>
+          <value>0</value>
+          <value>0</value>
+        </severe-component>
+      </convective-hazard>
+      <convective-hazard>
+        <severe-component type="extreme severe thunderstorms" units="percent" time-layout="k-p24h-n2-13">
+          <name>Total Probability of Extreme Severe Thunderstorms</name>
+          <value>0</value>
+          <value>0</value>
+        </severe-component>
+      </convective-hazard>
+      <climate-anomaly>
+        <weekly type="average temperature above normal" units="percent" time-layout="k-p6d-n1-14">
+          <name>Probability of 8-14 Day Average Temperature Above Normal</name>
+          <value>45</value>
+        </weekly>
+      </climate-anomaly>
+      <climate-anomaly>
+        <weekly type="average temperature below normal" units="percent" time-layout="k-p6d-n1-14">
+          <name>Probability of 8-14 Day Average Temperature Below Normal</name>
+          <value>30</value>
+        </weekly>
+      </climate-anomaly>
+      <climate-anomaly>
+        <weekly type="average precipitation above normal" units="percent" time-layout="k-p6d-n1-14">
+          <name>Probability of 8-14 Day Average Precipitation Above Normal</name>
+          <value>29</value>
+        </weekly>
+      </climate-anomaly>
+      <climate-anomaly>
+        <weekly type="average precipitation below normal" units="percent" time-layout="k-p6d-n1-14">
+          <name>Probability of 8-14 Day Average Precipitation Below Normal</name>
+          <value>35</value>
+        </weekly>
+      </climate-anomaly>
+      <climate-anomaly>
+        <monthly type="average temperature above normal" units="percent" time-layout="k-p1m-n1-15">
+          <name>Probability of One-Month Average Temperature Above Normal</name>
+          <value>45</value>
+        </monthly>
+      </climate-anomaly>
+      <climate-anomaly>
+        <monthly type="average temperature below normal" units="percent" time-layout="k-p1m-n1-15">
+          <name>Probability of One-Month Average Temperature Below Normal</name>
+          <value>22</value>
+        </monthly>
+      </climate-anomaly>
+      <climate-anomaly>
+        <monthly type="average precipitation above normal" units="percent" time-layout="k-p1m-n1-15">
+          <name>Probability of One-Month Average Precipitation Above Normal</name>
+          <value>33</value>
+        </monthly>
+      </climate-anomaly>
+      <climate-anomaly>
+        <monthly type="average precipitation below normal" units="percent" time-layout="k-p1m-n1-15">
+          <name>Probability of One-Month Average Precipitation Below Normal</name>
+          <value>33</value>
+        </monthly>
+      </climate-anomaly>
+      <climate-anomaly>
+        <seasonal type="average temperature above normal" units="percent" time-layout="k-p3m-n13-16">
+          <name>Probability of Three-Month Average Temperature Above Normal</name>
+          <value>57</value>
+          <value>58</value>
+          <value>57</value>
+          <value>40</value>
+          <value>34</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>34</value>
+          <value>34</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+        </seasonal>
+      </climate-anomaly>
+      <climate-anomaly>
+        <seasonal type="average temperature below normal" units="percent" time-layout="k-p3m-n13-16">
+          <name>Probability of Three-Month Average Temperature Below Normal</name>
+          <value>10</value>
+          <value>9</value>
+          <value>10</value>
+          <value>27</value>
+          <value>33</value>
+          <value>33</value>
+          <value>34</value>
+          <value>34</value>
+          <value>34</value>
+          <value>33</value>
+          <value>34</value>
+          <value>34</value>
+          <value>34</value>
+        </seasonal>
+      </climate-anomaly>
+      <climate-anomaly>
+        <seasonal type="average precipitation above normal" units="percent" time-layout="k-p3m-n13-16">
+          <name>Probability of Three-Month Average Precipitation Above Normal</name>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+        </seasonal>
+      </climate-anomaly>
+      <climate-anomaly>
+        <seasonal type="average precipitation below normal" units="percent" time-layout="k-p3m-n13-16">
+          <name>Probability of Three-Month Average Precipitation Below Normal</name>
+          <value>33</value>
+          <value>34</value>
+          <value>34</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>34</value>
+          <value>34</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+          <value>33</value>
+        </seasonal>
+      </climate-anomaly>
+      <wind-speed type="gust" units="knots" time-layout="k-p3h-n22-7">
+        <name>Wind Speed Gust</name>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>6</value>
+        <value>6</value>
+        <value>6</value>
+        <value>6</value>
+        <value>7</value>
+        <value>8</value>
+        <value>7</value>
+        <value>7</value>
+        <value>3</value>
+        <value>3</value>
+        <value>11</value>
+        <value>11</value>
+        <value>8</value>
+        <value>8</value>
+        <value>6</value>
+        <value>6</value>
+        <value>9</value>
+        <value>9</value>
+        <value>16</value>
+      </wind-speed>
+      <wind-speed type="incremental34" units="percent" time-layout="k-p6h-n20-9">
+        <name>Probability of a Tropical Cyclone Wind Speed above 34 Knots (Incremental)</name>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+      </wind-speed>
+      <wind-speed type="incremental50" units="percent" time-layout="k-p6h-n20-9">
+        <name>Probability of a Tropical Cyclone Wind Speed above 50 Knots (Incremental)</name>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+      </wind-speed>
+      <wind-speed type="incremental64" units="percent" time-layout="k-p6h-n20-9">
+        <name>Probability of a Tropical Cyclone Wind Speed above 64 Knots (Incremental)</name>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+      </wind-speed>
+      <wind-speed type="cumulative34" units="percent" time-layout="k-p6h-n20-9">
+        <name>Probability of a Tropical Cyclone Wind Speed above 34 Knots (Cumulative)</name>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+      </wind-speed>
+      <wind-speed type="cumulative50" units="percent" time-layout="k-p6h-n20-9">
+        <name>Probability of a Tropical Cyclone Wind Speed above 50 Knots (Cumulative)</name>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+      </wind-speed>
+      <wind-speed type="cumulative64" units="percent" time-layout="k-p6h-n20-9">
+        <name>Probability of a Tropical Cyclone Wind Speed above 64 Knots (Cumulative)</name>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+      </wind-speed>
+      <humidity type="relative" units="percent" time-layout="k-p3h-n38-5">
+        <name>Relative Humidity</name>
+        <value>67</value>
+        <value>77</value>
+        <value>65</value>
+        <value>37</value>
+        <value>26</value>
+        <value>22</value>
+        <value>50</value>
+        <value>67</value>
+        <value>70</value>
+        <value>77</value>
+        <value>67</value>
+        <value>40</value>
+        <value>27</value>
+        <value>24</value>
+        <value>61</value>
+        <value>80</value>
+        <value>86</value>
+        <value>96</value>
+        <value>83</value>
+        <value>56</value>
+        <value>45</value>
+        <value>44</value>
+        <value>80</value>
+        <value>93</value>
+        <value>72</value>
+        <value>62</value>
+        <value>90</value>
+        <value>96</value>
+        <value>67</value>
+        <value>54</value>
+        <value>83</value>
+        <value>93</value>
+        <value>58</value>
+        <value>45</value>
+        <value>83</value>
+        <value>92</value>
+        <value>56</value>
+        <value>43</value>
+      </humidity>
+      <humidity type="maximum relative" units="percent" time-layout="k-p24h-n7-17">
+        <name>Daily Maximum Relative Humidity</name>
+        <value>77</value>
+        <value>77</value>
+        <value>96</value>
+        <value>92</value>
+        <value>97</value>
+        <value>93</value>
+        <value>92</value>
+      </humidity>
+      <weather time-layout="k-p3h-n38-5">
+        <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions>
+          <value coverage="patchy" intensity="none" weather-type="fog" qualifier="none">
+            <visibility xsi:nil="true"/>
+          </value>
+        </weather-conditions>
+        <weather-conditions>
+          <value coverage="patchy" intensity="none" weather-type="fog" qualifier="none">
+            <visibility xsi:nil="true"/>
+          </value>
+        </weather-conditions>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions>
+          <value coverage="slight chance" intensity="light" weather-type="rain" qualifier="none">
+            <visibility xsi:nil="true"/>
+          </value>
+        </weather-conditions>
+        <weather-conditions>
+          <value coverage="slight chance" intensity="light" weather-type="rain" qualifier="none">
+            <visibility xsi:nil="true"/>
+          </value>
+        </weather-conditions>
+        <weather-conditions>
+          <value coverage="slight chance" intensity="light" weather-type="rain showers" qualifier="none">
+            <visibility xsi:nil="true"/>
+          </value>
+        </weather-conditions>
+        <weather-conditions>
+          <value coverage="slight chance" intensity="light" weather-type="rain showers" qualifier="none">
+            <visibility xsi:nil="true"/>
+          </value>
+        </weather-conditions>
+        <weather-conditions>
+          <value coverage="slight chance" intensity="light" weather-type="rain showers" qualifier="none">
+            <visibility xsi:nil="true"/>
+          </value>
+        </weather-conditions>
+        <weather-conditions>
+          <value coverage="slight chance" intensity="light" weather-type="rain showers" qualifier="none">
+            <visibility xsi:nil="true"/>
+          </value>
+        </weather-conditions>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+        <weather-conditions/>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p3h-n38-5">
+        <name>Conditions Icons</name>
+        <icon-link>http://forecast.weather.gov/images/wtf/nskc.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nfew.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/few.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/skc.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/skc.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/skc.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/skc.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nbkn.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nfg.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nfg.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/sct.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/few.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/few.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/sct.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/sct.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nfew.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nfew.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nfew.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/few.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/few.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/few.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/few.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nsct.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nra.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/ra20.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/shra20.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nra20.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nra20.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/shra20.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/sct.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nsct.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nsct.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/sct.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/sct.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nsct.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/nsct.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/sct.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/sct.jpg</icon-link>
+      </conditions-icon>
+      <hazards time-layout="k-p1h-n74-8">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+        <hazard-conditions/>
+      </hazards>
+      <water-state time-layout="k-p3h-n30-6">
+        <waves type="significant" units="feet">
+          <name>Wave Height</name>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+          <value xsi:nil="true"/>
+        </waves>
+      </water-state>
+    </parameters>
+  </data>
+</dwml>
