@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe NOAA do
   it { should respond_to :forecast }
   it { should respond_to :current_conditions }
@@ -5,7 +7,6 @@ describe NOAA do
   it { should respond_to :detailed_forecast }
 
   describe "#detailed_forecast" do
-
     it "downloads the forecast with HTTP service" do
       expect_any_instance_of(NOAA::HttpService).to receive(:get_detailed_forecast)
       NOAA.detailed_forecast(2, 30, -142)
@@ -22,6 +23,14 @@ describe NOAA do
       xml_doc = double()
       NOAA::HttpService.any_instance.stub(:get_detailed_forecast).and_return(xml_doc)
       expect(NOAA.detailed_forecast(2, 30, -142)).to be_a NOAA::Forecast
+    end
+  end
+
+  describe "#forecast" do
+    it "returns a summary forecast" do
+      xml_doc = double()
+      NOAA::HttpService.any_instance.stub(:get_forecast).and_return(xml_doc)
+      expect(NOAA.forecast(2, 30, -142)).to be_a NOAA::ForecastSummary
     end
   end
 end

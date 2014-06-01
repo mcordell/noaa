@@ -9,7 +9,7 @@ rescue LoadError => e
   end
 end
 
-%w(configuration current_conditions forecast forecast_day http_service station station_writer).each { |file| require File.join(File.dirname(__FILE__), 'noaa', file) }
+%w(configuration current_conditions forecast forecast_summary forecast_day http_service station station_writer).each { |file| require File.join(File.dirname(__FILE__), 'noaa', file) }
 
 #
 # The NOAA singleton provides methods to conveniently access information from the NOAA weather feed.
@@ -58,7 +58,7 @@ module NOAA
     # for a given location more frequently than that. For more information, please see http://www.nws.noaa.gov/xml/#frequency
     #
     def forecast(num_days, lat, lng)
-      Forecast.from_xml(HttpService.new.get_forecast(num_days, lat, lng))
+      ForecastSummary.from_xml(HttpService.new.get_forecast(num_days, lat, lng))
     end
 
     def detailed_forecast(num_days, lat, lng)
