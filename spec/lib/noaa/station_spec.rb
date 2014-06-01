@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe NOAA::Station do
   before :all do
-    NOAA::Station.stations_file = File.join(File.dirname(__FILE__), 'data', 'stations.yml')
+    NOAA::Station.stations_file = File.join(File.dirname(__FILE__), '../../data', 'stations.yml')
   end
 
   let(:station) { NOAA::Station.find('KNYC') }

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe NOAA do
   describe NOAA::StationWriter do
-    let(:xml_doc) { Nokogiri::XML(File.open(File.join(File.dirname(__FILE__), 'data', 'stations-abridged.xml')).read) }
+    let(:xml_doc) { Nokogiri::XML(File.open(File.join(File.dirname(__FILE__), '../../data', 'stations-abridged.xml')).read) }
 
     before do
       io = StringIO.new
