@@ -1,8 +1,5 @@
 require "spec_helper"
 
-describe NOAA do
-  describe NOAA::ForecastDetailed do
-
-
-  end
+describe NOAA::ForecastDetailed do
+  it_behaves_like "forecast"
 end
