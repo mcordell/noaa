@@ -9,7 +9,7 @@ rescue LoadError => e
   end
 end
 
-%w(configuration current_conditions forecast forecast_summary forecast_detailed forecast_day http_service station station_writer).each { |file| require File.join(File.dirname(__FILE__), 'noaa', file) }
+%w(configuration current_conditions data_value forecast forecast_summary forecast_detailed forecast_day http_service station station_writer).each { |file| require File.join(File.dirname(__FILE__), 'noaa', file) }
 
 #
 # The NOAA singleton provides methods to conveniently access information from the NOAA weather feed.
