@@ -37,4 +37,5 @@ This can be run at any time to update the stations, but you must run it once to 
   s.add_development_dependency('guard-rspec')
   s.add_development_dependency('pry')
   s.add_development_dependency('vcr')
+  s.add_development_dependency('webmock')
 end
