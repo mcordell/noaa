@@ -1,26 +1,29 @@
 class Timelayout
-  attr_reader :layout_key, :layout, :xml_node
+  attr_reader :layout_key, :layout
 
-  def from_xml_node(xml_node)
-    @xml_node = xml_node
-    @layout_key = get_layout_key
-    @layout = get_layout
+  def self.from_xml_node(xml_node)
+    new(layout_key_from(xml_node), layout_from(xml_node))
   end
 
-  def get_layout_key
-    layout_key = @xml_node.xpath('./time-layout/layout-key').first
-    layout_key.text if layout_key
+  def initialize(layout_key, layout)
+    @layout_key = layout_key
+    @layout = layout
   end
 
-  def get_layout
-    starts = @xml_node.xpath('./time-layout/start-valid-time')
-    ends = @xml_node.xpath('./time-layout/end-valid-time')
-    starts.map.with_index do |start, i|
-      if (ends.empty?)
-        DateTime.parse(start.text)
-      else
-        [DateTime.parse(start.text), DateTime.parse(ends[i].text)]
-      end
-    end
+  private_class_method
+
+  def self.layout_key_from(xml_node)
+    xml_node.xpath('./time-layout/layout-key').first.text
+  end
+
+  def self.layout_from(xml_node)
+    starts = xml_node.xpath('./time-layout/start-valid-time').map {|time|
+      DateTime.parse(time)
+    }
+    ends = xml_node.xpath('./time-layout/end-valid-time').map {|time|
+      DateTime.parse(time)
+    }
+
+    ends.empty? ? starts : starts.zip(ends)
   end
 end

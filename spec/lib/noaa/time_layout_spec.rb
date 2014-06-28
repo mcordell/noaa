@@ -1,73 +1,49 @@
 require 'spec_helper'
 
 describe Timelayout do
-  it { should respond_to :layout_key }
-  it { should respond_to :layout }
-  it { should respond_to :xml_node }
-  it { should respond_to :from_xml_node }
+  describe "extracting from XML node" do
+    let(:time_layout) { Timelayout.from_xml_node(Nokogiri::XML(xml)) }
 
-  let(:time_layout) { Timelayout.new }
+    let(:layout_key) { "k-p25h-n6-1" }
+    let(:start1) { "2014-05-01T08:00:00-07:00" }
+    let(:end1) { "2014-05-01T20:00:00-07:00" }
+    let(:start2) { "2014-05-02T08:00:00-07:00" }
+    let(:end2) { "2014-05-02T20:00:00-07:00" }
 
-  describe ".from_xml_node" do
-    context "when the passed xml node that contains a layout-key" do
-      let(:layout_key) { 'k-p25h-n7-1' }
-
-      before do
-        xml = "<time-layout><layout-key>#{layout_key}</layout-key></time-layout>"
-        @xml_node = Nokogiri::XML(xml)
-        time_layout.from_xml_node(@xml_node)
+    context "with a series of start and end time points" do
+      let(:xml) do
+        "<time-layout>
+           <layout-key>#{layout_key}</layout-key>
+           <start-valid-time>#{start1}</start-valid-time>
+           <end-valid-time>#{end1}</end-valid-time>
+           <start-valid-time>#{start2}</start-valid-time>
+           <end-valid-time>#{end2}</end-valid-time>
+         </time-layout>"
       end
 
-      it "sets its layout_key to the key" do
-        expect(time_layout.layout_key).to eq layout_key
+      it "extracts the layout key" do
+        expect(time_layout.layout_key).to eq(layout_key)
       end
 
-      it "sets its xml_node" do
-        expect(time_layout.xml_node).to eq @xml_node
-      end
-    end
-
-    context "when the passed an xml node that contains a series of start-valid-time and end-valid-time points" do
-      before do
-        xml = "<time-layout>
-        <start-valid-time>2014-05-01T08:00:00-07:00</start-valid-time>
-        <end-valid-time>2014-05-01T20:00:00-07:00</end-valid-time>
-        <start-valid-time>2014-05-02T08:00:00-07:00</start-valid-time>
-        <end-valid-time>2014-05-02T20:00:00-07:00</end-valid-time>
-        </time-layout>"
-        time_layout.from_xml_node(Nokogiri::XML(xml))
-      end
-
-      it "sets its layout to an array of DateTime pairs" do
-        time_layout.layout.each do |start_time,end_time|
-          expect(start_time).to be_a DateTime
-          expect(end_time).to be_a DateTime
-        end
-      end
-
-      it "sets its layout to an array of DateTime pairs in the proper order" do
-        expect(time_layout.layout[0][1]).to eq DateTime.parse('2014-05-01T20:00:00-07:00')
-        expect(time_layout.layout[1][0]).to eq DateTime.parse('2014-05-02T08:00:00-07:00')
+      it "extracts start and end times" do
+        expected = [[DateTime.parse(start1), DateTime.parse(end1)],
+                    [DateTime.parse(start2), DateTime.parse(end2)]]
+        expect(time_layout.layout).to eq expected
       end
     end
-    context "when the passed an xml node that contains a series of only start-valid-time" do
-      before do
-        xml = "<time-layout>
-        <start-valid-time>2014-05-01T08:00:00-07:00</start-valid-time>
-        <start-valid-time>2014-05-02T08:00:00-07:00</start-valid-time>
-        </time-layout>"
-        time_layout.from_xml_node(Nokogiri::XML(xml))
+
+    context "with only start times" do
+      let(:xml) do
+        "<time-layout>
+           <layout-key>#{layout_key}</layout-key>
+           <start-valid-time>#{start1}</start-valid-time>
+           <start-valid-time>#{start2}</start-valid-time>
+         </time-layout>"
       end
 
-      it "sets its layout to an array of DateTimes" do
-        time_layout.layout.each do |start_time,end_time|
-          expect(start_time).to be_a DateTime
-        end
-      end
-
-      it "sets its layout to an array of DateTime pairs in the proper order" do
-        expect(time_layout.layout[0]).to eq DateTime.parse('2014-05-01T08:00:00-07:00')
-        expect(time_layout.layout[1]).to eq DateTime.parse('2014-05-02T08:00:00-07:00')
+      it "extracts start times" do
+        expected = [DateTime.parse(start1), DateTime.parse(start2)]
+        expect(time_layout.layout).to eq expected
       end
     end
   end
