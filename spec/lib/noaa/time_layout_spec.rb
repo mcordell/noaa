@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Timelayout do
   describe "extracting from XML node" do
-    let(:time_layout) { Timelayout.from_xml_node(Nokogiri::XML(xml)) }
+    let(:time_layout) { Timelayout.from_xml_node(Nokogiri::XML(xml).xpath('//time-layout')) }
 
     let(:layout_key) { "k-p25h-n6-1" }
     let(:start1) { "2014-05-01T08:00:00-07:00" }

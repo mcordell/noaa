@@ -13,14 +13,14 @@ class Timelayout
   private_class_method
 
   def self.layout_key_from(xml_node)
-    xml_node.xpath('./time-layout/layout-key').first.text
+    xml_node.xpath('./layout-key').first.text
   end
 
   def self.layout_from(xml_node)
-    starts = xml_node.xpath('./time-layout/start-valid-time').map {|time|
+    starts = xml_node.xpath('./start-valid-time').map {|time|
       DateTime.parse(time)
     }
-    ends = xml_node.xpath('./time-layout/end-valid-time').map {|time|
+    ends = xml_node.xpath('./end-valid-time').map {|time|
       DateTime.parse(time)
     }
 

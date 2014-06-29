@@ -11,8 +11,7 @@ class DetailedForecastResponse
   def set_time_layouts
     @time_layouts = {}
     @xml_node.xpath('//time-layout').each do |time_layout|
-      layout = Timelayout.new
-      layout.from_xml_node(time_layout)
+      layout = Timelayout.from_xml_node(time_layout)
       @time_layouts[layout.layout_key] = layout
     end
   end
