@@ -1,6 +1,18 @@
 require 'spec_helper'
 
 describe DataValueSet do
+
+  describe ".values" do
+    context "when the layout is nil" do
+      let(:data_value_set) { DataValueSet.new(double()) }
+      before { data_value_set.layout = nil }
+
+      it "returns nil" do
+        expect(data_value_set.values).to eq nil
+      end
+    end
+  end
+
   describe "extracting from XML node" do
     let(:expected_values) { %w[0 0 0 0 0 0 0 18 16 20 12 7 5 1]}
     let(:expected_value_class) { 'probability-of-precipitation' }

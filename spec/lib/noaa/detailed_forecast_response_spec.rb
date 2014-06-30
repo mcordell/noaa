@@ -39,5 +39,11 @@ describe DetailedForecastResponse do
         expect(detailed_forecast_response.time_layouts.keys).to eq expected_keys
       end
     end
+
+    describe ".data_value_sets" do
+      it "returns all of the data value sets" do
+        expect(detailed_forecast_response.data_value_sets.length).to eq 22
+      end
+    end
   end
 end
