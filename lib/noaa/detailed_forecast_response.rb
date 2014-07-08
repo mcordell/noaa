@@ -2,11 +2,16 @@ class DetailedForecastResponse
   attr_reader :time_layouts, :parameters, :data_value_sets
   attr_accessor :raw_xml, :xml_node
 
-  def from_xml(xml)
-    @raw_xml = xml
-    @xml_node = Nokogiri::XML(xml)
-    set_time_layouts
-    set_data_value_sets
+  def initialize(raw_xml = null)
+    @raw_xml = raw_xml
+    @xml_node = Nokogiri::XML(@raw_xml) if @raw_xml
+  end
+
+  def self.from_xml(xml)
+    response = DetailedForecastResponse.new(xml)
+    response.set_time_layouts
+    response.set_data_value_sets
+    response
   end
 
   def set_time_layouts
