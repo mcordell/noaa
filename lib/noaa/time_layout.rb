@@ -1,5 +1,8 @@
 class Timelayout
   attr_reader :layout_key, :layout
+  extend Forwardable
+
+  def_delegator :@layout, :[]
 
   def self.from_xml_node(xml_node)
     new(layout_key_from(xml_node), layout_from(xml_node))

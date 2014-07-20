@@ -46,5 +46,12 @@ describe Timelayout do
         expect(time_layout.layout).to eq expected
       end
     end
+
+    it "passes array arguments to its layout array" do
+      layout = []
+      time_layout = Timelayout.new('some-key', layout)
+      expect(layout).to receive(:[]).with(:key)
+      time_layout[:key]
+    end
   end
 end
