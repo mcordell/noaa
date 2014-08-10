@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://graphical.weather.gov/xml/sample_products/browser_interface/ndfdXMLclient.php?lat=38.7076896900004&lon=-122.90249849699973&num_days=4
+    uri: http://graphical.weather.gov/xml/sample_products/browser_interface/ndfdXMLclient.php?lat=38.7076896900004&lon=-122.90249849699973
     body:
       encoding: US-ASCII
       string: ''
@@ -1763,6 +1763,6 @@ http_interactions:
             </parameters>
           </data>
         </dwml>
-    http_version: 
+    http_version:
   recorded_at: Mon, 28 Apr 2014 01:52:47 GMT
 recorded_with: VCR 2.9.0

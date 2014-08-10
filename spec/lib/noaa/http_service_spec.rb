@@ -42,14 +42,11 @@ describe NOAA do
       before do
         @lat = 38.7076896900004
         @long = -122.90249849699973
-        @num_days = 4
-        @params = { lat: @lat, num_days: @num_days, lon: @long }
       end
 
-      it 'returns a XML document for detailed forecast' do
+      it 'returns a XML string for detailed forecast' do
         VCR.use_cassette('detailed_forecast') do
-          expect(http_service.get_detailed_forecast( @num_days, @lat, @long)).
-          to be_a Nokogiri::XML::Document
+          expect(http_service.get_detailed_forecast(@lat, @long)[0..4]).to eq "<?xml"
         end
       end
     end

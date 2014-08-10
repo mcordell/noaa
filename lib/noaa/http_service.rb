@@ -10,8 +10,8 @@ module NOAA
       Nokogiri::XML(get_html_document(NOAA.configuration.by_day_url, params))
     end
 
-    def get_detailed_forecast(num_days, lat, lng)
-      params = { num_days: num_days, lat: lat, lon: lng }
+    def get_detailed_forecast(lat, lng)
+      params = { lat: lat, lon: lng }
       get_html_document(NOAA.configuration.detailed_url, params)
     end
 

@@ -61,8 +61,8 @@ module NOAA
       ForecastSummary.from_xml(HttpService.new.get_forecast(num_days, lat, lng))
     end
 
-    def detailed_forecast(num_days, lat, lng)
-      detailed_forecast_response = DetailedForecastResponse.from_xml(HttpService.new.get_detailed_forecast(num_days, lat, lng))
+    def detailed_forecast(lat, lng)
+      DetailedForecastResponse.from_xml(HttpService.new.get_detailed_forecast(lat, lng))
     end
 
     def configure
